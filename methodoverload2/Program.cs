@@ -17,9 +17,13 @@
             var full = $"{first} {last}";
             return uppercase ? full.ToUpper() : full;
         }
-    }
+        static void Main(string[] args)
+        { 
+         Console.WriteLine(FormatName("Anna", "Svensson"));
+         Console.WriteLine(FormatName("Anna", "Maria", "Svensson"));
+         Console.WriteLine(FormatName("Anna", "Svensson", true));
 
-    Console.WriteLine(FormatName("Anna", "Svensson"));
-Console.WriteLine(FormatName("Anna", "Maria", "Svensson"));
-Console.WriteLine(FormatName("Anna", "Svensson", true));
+    }
+  
+}
 }
